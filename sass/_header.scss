@@ -1,0 +1,152 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  background: $secondaryCl;
+  color: $primaryCl;
+
+  .header__navbar {
+    justify-content: space-between;
+    padding: 15px 0px;
+
+    &__left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+
+  &__logo {
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  &__list {
+    gap: 20px;
+  }
+
+  &__item {
+    padding: 4px 0px;
+    border-bottom: 2px solid transparent;
+    transition: 0.4s;
+    font-weight: 600;
+    color: $primaryCl;
+
+    &:hover {
+      border-color: $hoverCl;
+      color: $hoverCl;
+    }
+    @media (max-width:1200px) {
+      display: none;
+    }
+  }
+
+  &__hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+
+    span {
+      width: 20px;
+      height: 2px;
+      background: black;
+      border-radius: 2px;
+    }
+  }
+}
+
+.header__item--btns {
+  &__login {
+    padding: 12px 30px;
+    border-radius: 6px;
+    background-color: transparent;
+    border: 2px solid hsla(213, 50%, 22%, 1);
+  }
+
+  &__signin {
+    padding: 12px 30px;
+    border-radius: 6px;
+    border: 2px solid transparent;
+    background-color: hsla(333, 93%, 56%, 1);
+  }
+
+  @media (max-width:900px) {
+    &__login{
+      display: none;
+    }
+    &__signin {
+      display: none;
+    }
+  }
+
+}
+
+// input
+.subscribe {
+  display: flex;
+}
+
+.subscribe input {
+  width: 100%;
+  padding: 5px;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.subscribe input {
+  border-right: none;
+  border-radius: 6px 0 0 6px;
+  outline: none;
+}
+
+.subscribe button {
+  padding: 6px 20px;
+  background: transparent;
+  border: 2px solid gray;
+  border-left: none;
+  font-size: 14px;
+  border-radius: 0 10px 10px 0;
+  color: white;
+  cursor: pointer;
+}
+
+// input
+
+
+@media (max-width:900px) {
+  .header {
+    &__list {
+      position: fixed;
+      top: 0;
+      left: -100%;
+      background: $secondaryCl;
+      width: 60%;
+      height: 100vh;
+      flex-direction: column;
+      justify-content: center;
+      box-shadow: 0px 0px 10px $hoverCl;
+      transition: 0.4s;
+      z-index: 9999;
+    }
+
+    &__hamburger {
+      display: flex;
+    }
+
+    &__show-list {
+      left: 0;
+    }
+  }
+}
+
+@media (max-width:800px) {
+  .subscribe {
+    display: none;
+  }
+}

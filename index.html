@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sass</title>
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <!-- lokal css -->
+  <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <nav class="header__navbar container df">
+      <div class="header__navbar__left">
+        <div class="header__logo">
+          <a href="./index.html"><img src="./images/header/Logo (4).svg" alt=""></a>
+        </div>
+        <div>
+          <div class="subscribe">
+            <input type="email" placeholder="Search bar" />
+            <button><img src="./images/header/Search.svg" alt=""></button>
+          </div>
+        </div>
+      </div>
+      <ul class="header__list df">
+        <li class="header__item">
+          <a href="#">Category</a>
+        </li>
+        <li class="header__item">
+          <a href="#">Become an Mentor</a>
+        </li>
+        <li class="header__item--btns">
+          <button class="header__item--btns__login">Log in</button>
+        </li>
+        <li class="header__item--btns">
+          <button class="header__item--btns__signin">Sign in</button>
+        </li>
+      </ul>
+      <button class="header__hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero">
+      <div class="container">
+        <div class="hero">
+          <div class="hero__left">
+            <h1 class="hero__left__title">Find the Best Courses and Amazing Mentor</h1>
+            <p class="hero__left__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit
+              amet luctus venenatis,
+              lectus magna
+              fringilla urna, porttitor rhoncus</p>
+            <div class="hero__left__form">
+              <input type="email" placeholder="Type in the course you want to learn" />
+              <button>Subscribe</button>
+            </div>
+            <div class="hero__bottom">
+              <div class="">
+                <img src="./images/hero/access_alarm.svg" alt=""><span>Life Time Acces</span>
+              </div>
+              <div class="">
+                <img src="./images/hero/user.svg" alt=""><span>Life Time Acces</span>
+              </div>
+              <div class="">
+                <img src="./images/hero/video_library.svg" alt=""><span>Life Time Acces</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero__right">
+            <div class="hero__right__ball">
+              <img src="./images/hero/right/Bell Icon.svg" alt="">
+            </div>
+            <div class="hero__right__love">
+              <img src="./images/hero/right/Love Icon.svg" alt="">
+            </div>
+            <div class="hero__right__review">
+              <img src="./images/hero/right/Review.svg" alt="">
+            </div>
+            <div class="hero__right__verification">
+              <img src="./images/hero/right/Verification Icon.svg" alt="">
+            </div>
+            <div class="hero__right__png">
+              <img src="./images/hero/vecteezy_online-education-concept-illustration-digital-classroom_10869731.png"
+                alt="">
+            </div>
+          </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="cources">
+          <h2 class="cources__title">Trending Courses</h2>
+          <div class="cources__btns">
+            <button class="main-btn">All</button>
+            <button class="main-btn">Business</button>
+            <button class="main-btn">Art & Design</button>
+            <button class="main-btn">Development</button>
+            <button class="main-btn">Marketing</button>
+          </div>
+          <div class="cources__cards--wrapp">
+
+            <div class="cources__cards--wrapp__card">
+              <div class="cources__cards--wrapp__card__img">
+                <img src="./images/cources/3030-OpenMobileNetworks.jpgL.jpg" alt="">
+              </div>
+              <button class="main-btn cources__card__btn">UI/UX Design</button>
+              <h3 class="cources__card__title">Interpersonal skills - work better with others!</h3>
+              <p class="cources__card__text">Tanah Air Team</p>
+              <img class="cources__card__stars" src="./images/cources/Rating.svg" alt="">
+              <div class="cources__cards__bottom">
+                <p>$640</p>
+                <p class="cources__card__bottom__text">$384</p>
+              </div>
+            </div>
+            <div class="cources__cards--wrapp__card">
+              <div class="cources__cards--wrapp__card__img">
+                <img src="./images/cources/3030-OpenMobileNetworks.jpgL.jpg" alt="">
+              </div>
+              <button class="main-btn cources__card__btn">UI/UX Design</button>
+              <h3 class="cources__card__title">Interpersonal skills - work better with others!</h3>
+              <p class="cources__card__text">Tanah Air Team</p>
+              <img class="cources__card__stars" src="./images/cources/Rating.svg" alt="">
+              <div class="cources__cards__bottom">
+                <p>$640</p>
+                <p class="cources__card__bottom__text">$384</p>
+              </div>
+            </div>
+            <div class="cources__cards--wrapp__card">
+              <div class="cources__cards--wrapp__card__img">
+                <img src="./images/cources/3030-OpenMobileNetworks.jpgL.jpg" alt="">
+              </div>
+              <button class="main-btn cources__card__btn">UI/UX Design</button>
+              <h3 class="cources__card__title">Interpersonal skills - work better with others!</h3>
+              <p class="cources__card__text">Tanah Air Team</p>
+              <img class="cources__card__stars" src="./images/cources/Rating.svg" alt="">
+              <div class="cources__cards__bottom">
+                <p>$640</p>
+                <p class="cources__card__bottom__text">$384</p>
+              </div>
+            </div>
+            <div class="cources__cards--wrapp__card">
+              <div class="cources__cards--wrapp__card__img">
+                <img src="./images/cources/3030-OpenMobileNetworks.jpgL.jpg" alt="">
+              </div>
+              <button class="main-btn cources__card__btn">UI/UX Design</button>
+              <h3 class="cources__card__title">Interpersonal skills - work better with others!</h3>
+              <p class="cources__card__text">Tanah Air Team</p>
+              <img class="cources__card__stars" src="./images/cources/Rating.svg" alt="">
+              <div class="cources__cards__bottom">
+                <p>$640</p>
+                <p class="cources__card__bottom__text">$384</p>
+              </div>
+            </div>
+            <div class="cources__cards--wrapp__card">
+              <div class="cources__cards--wrapp__card__img">
+                <img src="./images/cources/3030-OpenMobileNetworks.jpgL.jpg" alt="">
+              </div>
+              <button class="main-btn cources__card__btn">UI/UX Design</button>
+              <h3 class="cources__card__title">Interpersonal skills - work better with others!</h3>
+              <p class="cources__card__text">Tanah Air Team</p>
+              <img class="cources__card__stars" src="./images/cources/Rating.svg" alt="">
+              <div class="cources__cards__bottom">
+                <p>$640</p>
+                <p class="cources__card__bottom__text">$384</p>
+              </div>
+            </div>
+            <div class="cources__cards--wrapp__card">
+              <div class="cources__cards--wrapp__card__img">
+                <img src="./images/cources/3030-OpenMobileNetworks.jpgL.jpg" alt="">
+              </div>
+              <button class="main-btn cources__card__btn">UI/UX Design</button>
+              <h3 class="cources__card__title">Interpersonal skills - work better with others!</h3>
+              <p class="cources__card__text">Tanah Air Team</p>
+              <img class="cources__card__stars" src="./images/cources/Rating.svg" alt="">
+              <div class="cources__cards__bottom">
+                <p>$640</p>
+                <p class="cources__card__bottom__text">$384</p>
+              </div>
+            </div>
+            <div class="cources__cards--wrapp__card">
+              <div class="cources__cards--wrapp__card__img">
+                <img src="./images/cources/3030-OpenMobileNetworks.jpgL.jpg" alt="">
+              </div>
+              <button class="main-btn cources__card__btn">UI/UX Design</button>
+              <h3 class="cources__card__title">Interpersonal skills - work better with others!</h3>
+              <p class="cources__card__text">Tanah Air Team</p>
+              <img class="cources__card__stars" src="./images/cources/Rating.svg" alt="">
+              <div class="cources__cards__bottom">
+                <p>$640</p>
+                <p class="cources__card__bottom__text">$384</p>
+              </div>
+            </div>
+            <div class="cources__cards--wrapp__card">
+              <div class="cources__cards--wrapp__card__img">
+                <img src="./images/cources/3030-OpenMobileNetworks.jpgL.jpg" alt="">
+              </div>
+              <button class="main-btn cources__card__btn">UI/UX Design</button>
+              <h3 class="cources__card__title">Interpersonal skills - work better with others!</h3>
+              <p class="cources__card__text">Tanah Air Team</p>
+              <img class="cources__card__stars" src="./images/cources/Rating.svg" alt="">
+              <div class="cources__cards__bottom">
+                <p>$640</p>
+                <p class="cources__card__bottom__text">$384</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="./js/app.js"></script>
+</body>
+
+</html>
