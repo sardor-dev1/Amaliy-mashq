@@ -8,7 +8,7 @@
     }
 
     .cources__card__btn {
-    padding: 6px 12px;
+        padding: 6px 12px;
     }
 
     &__btns {
@@ -63,9 +63,17 @@
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 40px;
         &__card {
+            border-radius: 10px;
             transition: .3s;
             &:hover {
                 box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+                transform: scale(1.02);
+            }
+            button {
+                width: 60%;
+                margin: 0 auto;
+                display: block;
+                transform: translateY(-25px);
             }
             &__img img {
                 width: 100%;
@@ -85,7 +93,7 @@
         &__title {
             font-weight: 700;
             font-size: 16px;
-            padding: 16px 15px 8px;
+            padding: 10px 15px 8px;
         }
         &__text {
             font-size: 12px;
@@ -102,6 +110,62 @@
                 font-size: 30px;
                 font-weight: bold;
             }
+        }
+    }
+}
+
+.cources__card__btn {
+    background-color: rgb(38, 38, 231);
+    border-color: transparent;
+    &:hover {
+        border-color: rgb(38, 38, 231);
+        background-color: white;
+        color: rgb(38, 38, 231);
+    }
+}
+
+.cources__bottom__link-wrapp {
+    width: 100%;
+    text-align: center;
+    padding: 40px 0 40px;
+}
+
+.cources__bottom__link {
+    padding: 15px 35px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+@media (max-width:1100px) {
+    .cources {
+        .cources__cards--wrapp {
+                grid-template-columns: repeat(3, 1fr);
+            }
+    }
+}
+
+@media (max-width:900px) {
+    .cources {
+        .cources__cards--wrapp {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+@media (max-width:600px) {
+    .cources {
+        .cources__cards--wrapp {
+            grid-template-columns: .7fr;
+            margin: 0 auto;
+            justify-content: center;
+        }
+    }
+}
+@media (max-width:450px) {
+    .cources {
+        .cources__cards--wrapp {
+            grid-template-columns: .9fr;
+            margin: 0 auto;
+            justify-content: center;
         }
     }
 }
